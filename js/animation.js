@@ -17,6 +17,7 @@
    */
 
    $(document).ready(function() {
+     window.alert("in function")
   $(".events").fadeIn();
      // place this within dom ready function
      function showpanel() {
