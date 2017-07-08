@@ -1,0 +1,178 @@
+<!-- index.html -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <!--style-->
+        <link rel="stylesheet" href="css/normalize" />
+        <link rel="stylesheet" href="css/html5reset.css" />
+        <link rel="stylesheet" href="css/skeleton.css" />
+        <link rel="stylesheet" href="css/style.css" />
+      <link href="https://fonts.googleapis.com/css?family=Lora|Playfair+Display" rel="stylesheet" />
+
+      <!-- load angular and angular route via CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+
+  <!--Mrs. Eaves Font-->
+      <script src="https://use.typekit.net/kcc4omr.js"></script>
+
+      <script>try{Typekit.load({ async: true });}catch(e){}</script>
+      <script
+			  src="http://code.jquery.com/jquery-3.2.1.js"
+			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			  crossorigin="anonymous"></script>
+        <script src="js/animation.js"></script>
+    </head>
+    <body>
+
+<header>
+
+<section class="topnav">
+<ul>
+<li><a href="">Click here</a> for our Summer Reading Program Calendar for
+Both Kids and Adults.</li>
+<li>The Library will be closed on Tuesday, July 4th for Independence Day.
+Have a Happy Holiday!</li>
+</ul>
+</section>
+
+<div class="container">
+
+      <div class="row">
+
+
+            <div class="six columns">
+              <img src="images/lel_logo.png" />
+
+              <div class="donate_button">Support Your Library</div>
+              <div class="volunteer_button">Volunteer at Your Library</div>
+
+            </div>
+
+            <div class="six columns">
+
+              <section class="research">
+              <h3><em>Find Books, Movies and More</em></h3>
+              <form action="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-search.pl" id="searchform" method="get" name="searchform"><input id="transl1" name="q" type="text">
+                <select id="masthead_search" name="idx">
+                  <option value="kw">Keyword</option>
+                  <option value="ti">Title</option>
+                  <option value="au">Author</option>
+                  <option value="su">Subject</option>
+                  <option value="nb">ISBN</option>
+                  <option value="se">Series</option>
+                  <option value="callnum">Call Number</option>
+                </select>
+
+<a href="#" class="button">Search</a>
+
+<ul class="search_options">
+<li><a href="">Advanced Search</a></li>
+<li><a href="">Login to your Account</a></li>
+</ul>
+
+</form>
+<nav>
+<ul>
+<li><a href="databases.html" class="button green_button">Research & Digital Resources</a></li>
+<li><a href="#" class="button green_button">Suggest a Purchase</a></li>
+</ul>
+</nav>
+
+</section>
+
+
+            </div>
+
+
+      </div>
+
+
+</div>
+
+<section class="main_nav">
+
+<div class="container">
+
+      <div class="row">
+<nav>
+  <ul>
+    <li><a href="#">Events at the Library</a></li>
+    <li><a href="#">eBooks and Audiobooks</a></li>
+    <li><a href="#">For Children and Young Adults</a></li>
+    <li><a href="#">For Adults</a></li>
+  </ul>
+</nav>
+
+</div>
+
+</div>
+
+</section>
+
+</header>
+
+
+
+<!--begin carousel-->
+
+<section class="events">
+
+  <section class="event_title">
+    <ul>
+      <li class="event_number">1</li>
+      <li class="event_name">Events and Programs</li>
+      <li class="event_name">Story Time Magic With Elizabeth Ellis at Little Elm Pumpkin Hollow</li>
+      <li class="explore"><a href="#" class="button green_button">Explore</a></li>
+    </ul>
+
+
+  </section>
+
+</section>
+
+<div class="container">
+
+      <div class="row">
+
+
+            <div class="twelve columns">
+
+                <section id="new_books">
+                    <h1>Recent and Popular</h1>
+                    <h1 class="green">Adult Fiction</h1>
+                </section>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<script>
+
+$( document ).ready(function() {
+
+  $( ".events" ).fadeIn( "slow", function() {
+
+
+  });
+});
+
+</script>
+
+    </body>
+
+    </html>

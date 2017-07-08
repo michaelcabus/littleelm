@@ -1,0 +1,211 @@
+/*header */
+.topnav {
+  /*background-color: #d5e3f3;*/ }
+  .topnav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+    font-family: Raleway;
+    /*box-shadow: 1px 4px 6px #022b57, 0 0 0 #000, 1px 4px 6px #def;*/
+    border-bottom: 1px solid #9FA0A3;
+    background-image: linear-gradient(#EDEFF4, #F2F3F8);
+    /*box-shadow: inset 0 0 100px hsla(0,0%,0%,.3);*/ }
+    .topnav ul li {
+      color: #000000; }
+      .topnav ul li a {
+        color: #008156;
+        text-decoration: none; }
+
+.topnav p {
+  text-align: center; }
+
+.button--primary {
+  background-color: #ce3d90;
+  color: #ffffff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+.button--rounded {
+  border-radius: 999px; }
+
+header {
+  border-bottom: 2px #0bacd8 solid; }
+  header .research {
+    padding-top: 40px; }
+  header h3 {
+    font-family: "mrs-eaves-roman-small-caps";
+    color: #002e51;
+    font-size: 1.875rem; }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+  header nav h2 {
+    color: #ffffff;
+    font-family: "mrs-eaves-roman-small-caps";
+    font-size: 22px;
+    margin-bottom: 0px;
+    padding: 28px;
+    letter-spacing: 2px;
+    opacity: .9; }
+  header #transl1 {
+    width: 54%; }
+  header .search_options {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+    header .search_options li a {
+      color: #05845A;
+      font-family: "mrs-eaves-roman-small-caps";
+      text-decoration: none;
+      font-size: 18px; }
+
+/*buttons*/
+.button {
+  background-image: -webkit-linear-gradient(45deg, #022b57, #0451A3);
+  background-image: linear-gradient(45deg, #022b57, #0451A3);
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  bottom: 5px;
+  position: relative;
+  max-width: 100%;
+  box-shadow: 0px 2px 10px #999; }
+
+.orange {
+  background-image: -webkit-linear-gradient(106deg, #ffc14c 50%, #FFCA65 50%);
+  background-image: linear-gradient(106deg, #ffc14c 50%, #FFCA65 50%); }
+
+.green_button {
+  background-image: -webkit-linear-gradient(45deg, #008156, #006745);
+  background-image: linear-gradient(45deg, #008156, #006745); }
+
+/*carousel*/
+.gradient {
+  background: linear-gradient(rgba(60, 95, 112, 0.7), rgba(60, 95, 112, 0.7)), url(../images/carousel1.jpg) !important;
+  background-size: cover !important;
+  background-position: center !important; }
+
+.donate_button {
+  border: 2px solid #087B9A;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #087B9A;
+  margin: 10px;
+  padding: 10px;
+  text-align: center; }
+
+.volunteer_button {
+  border: 2px solid #008156;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #008156;
+  margin: 10px;
+  padding: 10px;
+  text-align: center; }
+
+.main_nav {
+  background-image: -webkit-linear-gradient(45deg, #022B57, #0451A3);
+  background-image: linear-gradient(45deg, #022b57, #0451A3);
+  border-top: 2px #0bacd8 solid; }
+  .main_nav ul li {
+    border: 2px solid #f7f7f7;
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    opacity: .8; }
+  .main_nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase; }
+
+.database {
+  background-color: #ffffff; }
+
+.event_number {
+  display: none; }
+
+.event_name {
+  display: none; }
+
+.explore {
+  transform: translateY(50%); }
+
+#research_databases h1 {
+  font-family: "mrs-eaves-roman-small-caps";
+  text-align: center;
+  font-size: 38px; }
+
+#research {
+  background-color: #ffffff;
+  height: 200px;
+  font-family: "mrs-eaves-roman-small-caps";
+  color: #ffffff; }
+  #research h1 {
+    color: #ffffff;
+    background-color: #217853;
+    text-align: center; }
+  #research h3 {
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #217853; }
+  #research .research_databases {
+    display: flex;
+    justify-content: space-between; }
+  #research .database {
+    background-color: #ffffff;
+    border-left: 2px dotted #217853;
+    padding: 20px;
+    opacity: .8; }
+
+.events {
+  background: url(../images/carousel1.jpg);
+  display: none;
+  height: 500px;
+  border-bottom: 2px #0bacd8 solid; }
+  .events ul {
+    margin: 0 auto;
+    width: 330px;
+    display: flex;
+    justify-content: space-evenly; }
+  .events .event_title ul li {
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    list-style: none;
+    font-size: 23px;
+    margin-right: 51px; }
+
+#new_books h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 33px; }
+#new_books h1.green {
+  color: #05845A; }
+
+#online {
+  margin-top: 20px; }
+  #online h2 {
+    color: #000000;
+    font-family: "mrs-eaves-roman-small-caps";
+    font-size: 22px;
+    margin-bottom: 0px;
+    padding: 10px;
+    letter-spacing: 2px;
+    opacity: .9;
+    border: .5px solid #008156; }
+  #online ul {
+    list-style: none;
+    border-right: .5px dotted #008156; }
+  #online .ebooks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; }
+    #online .ebooks ul li {
+      font-weight: bold;
+      padding: 10px;
+      width: 200px; }
+
+/*animations */
+
+/*# sourceMappingURL=style.css.map */
