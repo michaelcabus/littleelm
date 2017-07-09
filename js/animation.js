@@ -1,28 +1,12 @@
-/*background:
- linear-gradient(
-     rgba(60, 95, 112, 0.7),
-     rgba(60, 95, 112, 0.7)
-   ),
-   background:
-   linear-gradient(
-        rgba(60, 95, 112, 0.7),
-        rgba(60, 95, 112, 0.7)
-      )
 
-      linear-gradient(
-            rgba(60, 95, 112, 0.7),
-            rgba(60, 95, 112, 0.7)
-          ),
-          url(../images/carousel1.jpg) !important
-   */
 
    $(document).ready(function() {
      window.alert("in function")
-  $("#events").fadeIn();
+  $(".events").fadeIn();
      // place this within dom ready function
      function showpanel() {
 
-       $('#events').css({background: "linear-gradient(rgba(60, 95, 112, 0.7),rgba(60, 95, 112, 0.7)), url(images/carousel1.jpg)"});
+       $('.events').css({background: "linear-gradient(rgba(60, 95, 112, 0.7),rgba(60, 95, 112, 0.7)), url(images/carousel1.jpg)"});
     }
 
     function showtext() {
