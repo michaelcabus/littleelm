@@ -278,9 +278,8 @@ display: none;
 }
 
 #events {
- background:url(../images/carousel1.jpg);
 
- display: none;
+ background: url("../images/carousel1.jpg") center;
  height:500px;
  border-bottom: 2px #0bacd8 solid;
 
@@ -293,18 +292,34 @@ display: none;
 
      }
 
-     .event_title {
 
-         ul li {
-             font-family: 'Playfair Display', serif;
-             color:#ffffff;
-             list-style: none;
-             font-size: 23px;
-             margin-right: 51px;
 
-         }
 
-     }
+}
+
+#events::after {
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 507px;
+  height: 100%;
+  width: 100%;
+  content: '';
+  display: block;
+}
+
+
+.event_title {
+
+    ul li {
+        font-family: 'Playfair Display', serif;
+        color:#ffffff;
+        list-style: none;
+        font-size: 23px;
+        margin-right: 51px;
+        z-index: 99999;
+
+    }
 
 }
 
