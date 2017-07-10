@@ -10,13 +10,14 @@
 
     function showtext() {
 
-      $('.event_number').fadeIn();
+      $('#event_number').fadeIn();
    }
 
    function showevent() {
 
-     $('.event_name').fadeIn();
-    
+     $('#event_name').fadeIn();
+     $('#event_description').fadeIn();
+
 
   }
 
