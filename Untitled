@@ -1,0 +1,46 @@
+<h3><<branches.branchname>></h3>
+Checked out to <<borrowers.title>> <<borrowers.firstname>> <<borrowers.initials>> <<borrowers.surname>> <br />
+(<<borrowers.cardnumber>>) <br />
+<<today>><br />
+<h4>Checked Out Today</h4>
+<checkedout>
+<p>
+<<biblio.title>> <br />
+Barcode: <<items.barcode>><br />
+Date due: <<issues.date_due>><br />
+</p>
+</checkedout>
+---<end snip>---
+-- update existing users in Koha database -->
+
+      <auth_by_bind>0</auth_by_bind> <!-- set to 1 to authenticate by binding instead ofpassword comparison, e.g., to use Active Directory -->
+
+      <principal_name>%s@my_domain.com</principal_name> <!-- optional, for auth_by_bind: a printf format to make userPrincipalName from koha userid -->
+
+      <mapping> <!-- match koha SQL field names to your LDAP record field names -->
+
+       <firstname is="givenname"></firstname>
+
+       <surname is="sn"></surname>
+
+       <address is="postaladdress"></address>
+
+       <city is="l">Athens, OH</city>
+
+       <zipcode is="postalcode"></zipcode>
+
+       <branchcode is="branch">MAIN</branchcode>
+
+       <userid is="uid"></userid>
+
+       <password is="userpassword"></password>
+
+       <email is="mail"></email>
+
+       <categorycode is="employeetype">PT</categorycode>
+
+       <phone is="telephonenumber"></phone>
+
+      </mapping>
+
+     </ldapserver>

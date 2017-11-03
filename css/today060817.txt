@@ -1,9 +1,0 @@
-#43209: change http links on opac-search
-#40638: Coverflow Plugin for Santa Fe Indian School Library, meeting scheduled ffor 1
-#39988: OPAC Design for Manor College, design updates
-#34042: OPAC Design - Taft School, design updates
-#40838: New OPAC Theme, new theme preview for Griffin Free
-#42221: subfield f doesn't display in field 245, added subfield f in search results, OPAC and staff side
-For Robin at KohaUS, created Javascript to add Amazon donate button to wiki
-#42879: Extra field in OPAC, resolved
-#41588: New OPAC theme - yes, please, coverflow gone again; the plugins on this site keep getting diabled in apache..very strange; may ping Dani or Larry to take a look
