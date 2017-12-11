@@ -369,12 +369,18 @@ header {
   .event_description p {
     color: #ffffff !important;
     font-family: "eskorte-latin";
-    font-size: 18px; }
+    font-size: 18px;
+    margin-bottom: 0px; }
+
+.resources {
+  display: flex; }
+
+#heading_area .event_text {
+  border: 1px solid #fcca67; }
 
 .event_text {
   background-color: #ffffff;
-  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.15);
-  padding: 20px; }
+  padding: 10px; }
   .event_text p {
     color: #ffffff;
     font-family: "eskorte-latin";
@@ -400,7 +406,8 @@ header {
   .children_event_heading h2 {
     font-family: "eskorte-latin";
     color: #022b57;
-    text-align: center; }
+    text-align: center;
+    background-color: #498CC8; }
 
 .teen_events_heading {
   width: 100%;
@@ -408,7 +415,13 @@ header {
   .teen_events_heading h2 {
     font-family: "eskorte-latin";
     color: #022b57;
-    text-align: center; }
+    text-align: center;
+    background-color: #498CC8; }
+
+#heading_area {
+  border-bottom: 2px solid #498CC8;
+  padding: 10px;
+  background-color: #f4f4f2; }
 
 .event {
   background-color: #ffffff;
@@ -421,7 +434,10 @@ header {
 .children_events h2 {
   font-family: "eskorte-latin";
   color: #022b57;
-  text-align: center; }
+  text-align: center;
+  border: 2px solid black;
+  width: 522px;
+  margin: 0 auto; }
 
 .children_resources {
   background-color: #ffffff; }
