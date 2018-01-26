@@ -1,13 +1,17 @@
 <!-- index.html -->
     <!DOCTYPE html>
-    <html>
     <head>
       <!--style-->
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/html5reset.css" />
         <link rel="stylesheet" href="css/skeleton.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/unslider.css" />
+        <link rel="stylesheet" href="css/unslider/dots.scss" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
       <link href="https://fonts.googleapis.com/css?family=Lora|Playfair+Display" rel="stylesheet" />
+
+
 
       <!-- load angular and angular route via CDN -->
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -20,8 +24,10 @@
   <!--Mrs. Eaves Font-->
       <script src="https://use.typekit.net/kcc4omr.js"></script>
 
+
       <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+       <link href="https://widgets.ticketleap.com/v2/widget.css" media="screen" rel="stylesheet" type="text/css" />
 
     </head>
     <body>
@@ -32,44 +38,61 @@
 
 
 <ul>
-<li><a href="">Click here</a> for our Summer Reading Program Calendar for
-Both Kids and Adults.</li>
-<li>The Library will be closed Tuesday, July 4th for Independence Day</li>
+<li class="hours-toggle">
+ <a href="#"><i class="fa fa-map-o" aria-hidden="true"></i> Hours and Location</a></li>
+ <li class="card-toggle">
+  <a href="#"><i class="fa fa-book" aria-hidden="true"></i>
+ Get a Library Card!</a></li>
+ <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i>
+  Support and Volunteer</a></li>
+  <li><a href=""><i class="fa fa-question-circle" aria-hidden="true"></i>
+   Get Help</a></li>
+<li class="button sidebar dropdown-toggle" id="login"><a href="#">Login/My Account</a>
+
+  </li>
 </ul>
 
-<div class="menu-collapsed">
-   <div class="bar"></div>
-   <nav>
-      <ul>
-         <li>Library Hours</li>
-         <li><a href="#">Monday, 9-5</a></li>
-         <li><a href="#">Tuesday, 9-5</a></li>
-         <li><a href="#">Wednesday-Friday, 10-6</a></li>
-         <li><a href="#">Saturday-Sunday, 10-6</a></li>
-      </ul>
-   </nav>
-</div>
+<div id="loginModal" class="main" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="false">
+        <div class="modal-header">
+          <h3>Create an Account</h3>
+          <ul>
+            <li id="register_button"><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-memberentry.pl">Register</a></li>
+          </ul>
+          <h3>Borrowing</h3>
+          <ul id="borrowing">
+            <li><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-user.pl">Renew Checked Out Items</a></li>
+            <li><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-shelves.pl">Your Lists</a></li>
+            <li><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-suggestions.pl">Your Purchase Suggestions</a></li>
+          </ul>
+        </div>
 
+
+    </div>
+
+<div id="hoursModal" class="main" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="false">
+<h3>Hours Today</h3>
+<ul>
+  <li><em>8:00am-6:00pm</em></li>
+  <li><a href="#">View Hours this Week</a></li>
+</ul>
+<h3>Visit the Library</h3>
+<ul id="library_address">
+<li>Little Elm Public Library</li>
+<li>100 W. Eldorado Pkwy.</li>
+<li>Little Elm, TX 75068</li>
+<li>Ph: (214) 975-0430</li>
+<li>Fax: (214) 618-3582</li>
+</ul>
 </section>
 
-<div class="container">
 
-      <div class="row">
-
-
-            <div class="six columns">
+            <section id="research_area">
+              <section id="logo">
               <img src="images/lel_logo.png" />
-
-              <div class="donate_button">Support and Volunteer at Your Library!</div>
-              <div class="volunteer_button">Get a Library Card!</div>
-              <div class="donate_button">Contact Your Library!</div>
-
-            </div>
-
-            <div class="six columns">
+            </section>
 
               <section class="research">
-              <h3><em>Find Books, Movies and More</em></h3>
+              <h3><em>Search the Catalog</em></h3>
               <form action="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-search.pl" id="searchform" method="get" name="searchform"><input id="transl1" name="q" type="text">
                 <select id="masthead_search" name="idx">
                   <option value="kw">Keyword</option>
@@ -83,29 +106,17 @@ Both Kids and Adults.</li>
 
 <a href="#" class="button">Search</a>
 
+</form>
+
 <ul class="search_options">
 <li><a href="">Advanced Search</a></li>
-<li><a href="">Login to your Account</a></li>
+<li><a href="#">Suggest a Purchase</a></li>
 </ul>
-
-</form>
-<nav>
-<ul>
-<li><a href="databases.html" class="button green_button">Research, Ebooks & Digital Resources</a></li>
-<li><a href="#" class="button green_button">Suggest a Purchase</a></li>
-</ul>
-</nav>
 
 </section>
 
+</section>
 
-            </div>
-
-
-      </div>
-
-
-</div>
 
 <section class="main_nav">
 
@@ -114,11 +125,14 @@ Both Kids and Adults.</li>
       <div class="row">
 <nav>
   <ul>
-    <li><a href="#">Events at the Library</a></li>
-    <li><a href="children.html">For Children and Young Adults</a></li>
-    <li><a href="adult.html">For Adults</a></li>
+    <li><a href="https://lepl.ticketleap.com">Events Calendar</a></li>
+    <li><a href="children.html">Kids & Parents</a></li>
+      <li><a href="children.html">Teens</a></li>
+    <li><a href="adult.html">Adults</a></li>
     <li><a href="#">Reference Services</a></li>
-    <li><a href="#">Visiting the Library</a></li>
+    <li><a href="databases.html">Digital Library</a></li>
+    <li><a href="#">Seed Library</a></li>
+    <li><a href="#">About Us</a></li>
   </ul>
 </nav>
 
@@ -132,20 +146,85 @@ Both Kids and Adults.</li>
 
 
 
-<!--begin carousel-->
 
 <section id="events">
+  <div class="container">
 
-  <section class="event_title">
-    <ul>
-      <li id="event_number">1</li>
-      <li id="event_name">Events and Programs</li>
-      <li id="event_description">Story Time Magic With Elizabeth Ellis at Little Elm Pumpkin Hollow</li>
-      <li class="explore"><a href="#" class="button green_button">Explore</a></li>
+        <div class="row">
+
+          <div class="four columns">
+        <section>
+            <h2>Featured Events</h2>
+
+  <div class="my-slider">
+	<ul>
+		<li>
+
+      <ul>
+        <li><img src="images/bookclub.jpg" /></li>
+        <li><link href="https://widgets.ticketleap.com/v2/widget.css" media="screen" rel="stylesheet" type="text/css" /><script src="https://widgets.ticketleap.com/v2/widget.js" type="text/javascript"></script><div id="tl-widget-wrapper-989e6c91-476a-4fc6-ac0b-d5b2892f0ada"><script type="text/javascript">tl_widget.update_widget("https://lepl.ticketleap.com/widget/v2/", "989e6c91-476a-4fc6-ac0b-d5b2892f0ada", "events=lepl-2018-book-club-meeting&accent_color=#e5422c");</script><!--[if IE 6]><div style="display:none"><![endif]--><div style="width: 100%; display: table; height: 200px;"><div style="display: table-cell; vertical-align: middle; text-align: center;"><img src="https://widgets.ticketleap.com/v2/loading.gif" /></div></div><!--[if IE 6]></div><![endif]--></div><input type="hidden" id="tl-affiliate-url-989e6c91-476a-4fc6-ac0b-d5b2892f0ada" name="tl-affiliate-url-989e6c91-476a-4fc6-ac0b-d5b2892f0ada" value="https://www.ticketleap.com/info/sell-tickets-online?rc=h2gwxnu"><input type="hidden" id="tl-show-event-name-989e6c91-476a-4fc6-ac0b-d5b2892f0ada" name="tl-show-event-name-989e6c91-476a-4fc6-ac0b-d5b2892f0ada" value="true"><input type="hidden" id="tl-show-event-location-989e6c91-476a-4fc6-ac0b-d5b2892f0ada" name="tl-show-event-location-989e6c91-476a-4fc6-ac0b-d5b2892f0ada" value="false"><input type="hidden" id="tl-show-event-dates-989e6c91-476a-4fc6-ac0b-d5b2892f0ada" name="tl-show-event-dates-989e6c91-476a-4fc6-ac0b-d5b2892f0ada" value="true"></li>
+      </ul>
+
+    </li>
+		<li><img src="images/unitedway.jpg" /></li>
+
+    <li>
+
+      <ul>
+      <li><img src="images/lego.png" /></li>
     </ul>
 
+    </li>
+	</ul>
+</div>
+</section>
+</div>
+          <div class="four columns">
+            <section>
+            <h2>New at Your Library</h2>
+            <div class="my-slider">
+            <ul>
+              <li><img src="images/cloudfire.jpg" /></li>
+              <li><img src="images/comicsplusresource.jpg" /></li>
 
-  </section>
+            </ul>
+             </div>
+          </section>
+</div>
+          <div class="four columns">
+              <section id="upcoming-events-widget">
+            <h2>Upcoming Events</h2>
+
+            <div id="tl-widget-wrapper-d4f4f2ec-2f7d-4090-833a-13e6948b3817">
+              <script type="text/javascript">
+                tl_widget.update_widget("https://lepl.ticketleap.com/widget/v2/", "d4f4f2ec-2f7d-4090-833a-13e6948b3817", "events=family-movie-matinee-the-wiz-live&events=free-tax-preparation&accent_color=#e5422c");
+
+              </script>
+              <!--[if IE 6]><div style="display:none"><![endif]-->
+              <div style="width: 100%; display: table; height: 200px;">
+                <div style="display: table-cell; vertical-align: middle; text-align: center;"><img src="https://widgets.ticketleap.com/v2/loading.gif" /></div>
+              </div>
+              <!--[if IE 6]></div><![endif]-->
+            </div>
+            <input type="hidden" id="tl-affiliate-url-d4f4f2ec-2f7d-4090-833a-13e6948b3817" name="tl-affiliate-url-d4f4f2ec-2f7d-4090-833a-13e6948b3817" value="https://www.ticketleap.com/info/sell-tickets-online?rc=h2gwxnu">
+            <input type="hidden" id="tl-show-event-name-d4f4f2ec-2f7d-4090-833a-13e6948b3817" name="tl-show-event-name-d4f4f2ec-2f7d-4090-833a-13e6948b3817" value="true">
+            <input type="hidden" id="tl-show-event-location-d4f4f2ec-2f7d-4090-833a-13e6948b3817" name="tl-show-event-location-d4f4f2ec-2f7d-4090-833a-13e6948b3817" value="true">
+            <input type="hidden" id="tl-show-event-dates-d4f4f2ec-2f7d-4090-833a-13e6948b3817" name="tl-show-event-dates-d4f4f2ec-2f7d-4090-833a-13e6948b3817" value="true">
+
+      <a class="green_button" href="https://lepl.ticketleap.com">View All Events</a>
+
+     </section>
+          </div>
+
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+
 
 </section>
 
@@ -157,9 +236,54 @@ Both Kids and Adults.</li>
             <div class="twelve columns">
 
                 <section id="new_books">
-                    <h1>Recent and Popular</h1>
 
-                    <h1 class="green">Adult Fiction</h1>
+                    <script>
+
+                   function getSystype()
+                   {var urlMatchers={"iii":/(Xcat|Xclass|frameset|search_code|searchtype|FF|search\/i|search\/X)/,"sirsi":/uhtbin/,"hip":/ipac20/,"voyager":/Pwebrecon/};var url=window.location.href;var systype="unknown";for(siteType in urlMatchers){if(urlMatchers[siteType].test(url)){systype=siteType;break;}}
+                   return systype;}
+                   function LT_get_widget_logic_koha()
+                   {console.log("**** inside LT_get_widget_logic_koha ****");delete LTFL_logic_ran;if(typeof(LibraryThingConnector)!=="undefined"&&typeof(LibraryThingConnector.LB.close)!=="undefined")
+                   {console.log("**** LT_get_widget_logic_koha -- closing lightbox ****");LibraryThingConnector.LB.close();}
+                   if(typeof(LTFL_logic_ran)=="undefined")
+                   {console.log("**** LT_get_widget_logic_koha -- LTFL_logic_ran is defined (bad) ****");}
+                   else
+                   {console.log("**** LT_get_widget_logic_koha -- LTFL_logic_ran is undefined (good) ****");}
+                   delete LibraryThingConnector;LT_get_widget_logic();}
+                   function LT_get_widget_logic()
+                   {if(typeof(LTFL_logic_ran)!="undefined")
+                   {return;}
+
+                   var systype=getSystype();var t=new Date();var wl=document.createElement("script");wl.type="text/javascript";wl.src="http://ltfl.librarything.com/connector/connector.php?id=3679-742275405&t="+t.getTime();window.LTFL_loadStarted=new Date().getTime();document.getElementsByTagName("head")[0].appendChild(wl);LTFL_logic_ran=1;}
+
+                   var systype=getSystype();var kohalistener=false;if(typeof(LTFL_loaded)=="undefined")
+                   {if(document.addEventListener)
+                   {if(typeof(systype)!=="undefined"&&systype=="liblimekoha")
+                   {}
+                   else
+                   {document.addEventListener("DOMContentLoaded",LT_get_widget_logic,false);}}
+                   else
+                   {(function()
+                   {if(/loaded|complete/.test(document.readyState))
+                   {return LT_get_widget_logic();}
+                   if(typeof(LTFL_loaded)=='undefined')
+                   {setTimeout(arguments.callee,50);}
+                   return 0;})();}
+                   if(window.addEventListener)
+                   {if(typeof(systype)!=="undefined"&&systype=="liblimekoha")
+                   {window.addEventListener("kohabibloaded",LT_get_widget_logic_koha,false);console.log("**** inside window.addEventListener ****");kohalistener=true;}
+                   else
+                   {window.addEventListener("load",LT_get_widget_logic,false);}}
+                   else if(window.attachEvent)
+                   {if(typeof(systype)!=="undefined"&&systype=="liblimekoha")
+                   {window.attachEvent("kohabibloaded",LT_get_widget_logic_koha);kohalistener=true;console.log("**** inside window.attachEvent ****");}
+                   else
+                   {window.attachEvent("onload",LT_get_widget_logic);}}}
+                   LTFL_loaded=1;
+                   document.write('<style> .nav-pills > li > a {font-family: "Raleway" !important;color: #000000 !important;} .multi_widget_title {display:none !important}</style>');
+                    </script>
+<div class="ltfl_bookdisplay_widget multi" id="ltfl_widget_ult_3711755832"><strong style="text-align: center;">&nbsp;</strong></div>
+
                 </section>
 </div>
 
@@ -167,15 +291,64 @@ Both Kids and Adults.</li>
 
 </div>
 
+<footer>
+
+  <div class="container">
+
+        <div class="row">
+
+
+              <div class="twelve columns">
+
+
+<section id="footer_content">
+
+<section>
+
+<ul>
+  <li>Little Elm Public Library</li>
+  <li>100 W. Eldorado Pkwy.</li>
+  <li>Little Elm, TX 75068</li>
+  <li>Ph: (214) 975-0430</li>
+  <li>Fax: (214) 618-3582</li>
+  <li><em>Need Help?</em> <a href="mailto:reference@littleelmlibrary.org">reference@littleelmlibrary.org</a></li>
+</ul>
+</section>
+
+<section id="social_media">
+  <ul>
+  <li><a href="http://www.facebook.com/littleelmlibrary"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+  <li><a href="https://twitter.com/littleelmtx"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+</ul>
+</section>
+
+</section>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
 
 
 <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
 
-
+<script src="https://widgets.ticketleap.com/v2/widget.js" type="text/javascript"></script>
 
     <script src="js/animation.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/unslider.js"></script>
 
+
+    <script>
+		jQuery(document).ready(function($) {
+			$('.my-slider').unslider();
+      $('.new-slider').unslider();
+		});
+	</script>
     </body>
 
     </html>
