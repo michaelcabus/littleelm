@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+  <!--style-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/html5reset.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/unslider.css" />
+    <link rel="stylesheet" href="css/unslider/dots.scss" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lora|Playfair+Display" rel="stylesheet" />
+
+
+
+  <!-- load angular and angular route via CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+ <!--Keppler-->
+  <script src="https://use.typekit.net/nak4aee.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<!--Mrs. Eaves Font-->
+  <script src="https://use.typekit.net/kcc4omr.js"></script>
+
+
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+   <link href="https://widgets.ticketleap.com/v2/widget.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+  <header>
+
+  <section class="topnav">
+
+  <ul>
+  <li>Holiday Closure: Monday, January 15th-Martin Luther King, Jr. Observance </li>
+
+  </ul>
+
+  <!--<ul>
+  <li class="hours-toggle">
+   <a href="#"><i class="fa fa-map-o" aria-hidden="true"></i> Hours and Location</a></li>
+   <li class="card-toggle">
+    <a href="#"><i class="fa fa-book" aria-hidden="true"></i>
+   Get a Library Card!</a></li>
+   <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i>
+    Support and Volunteer</a></li>
+    <li><a href=""><i class="fa fa-question-circle" aria-hidden="true"></i>
+     Get Help</a></li>
+  <li class="button sidebar dropdown-toggle" id="login"><a href="#">Login/My Account</a>
+
+    </li>
+  </ul>-->
+
+  <div id="loginModal" class="main" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="false">
+          <div class="modal-header">
+            <h3>Create an Account</h3>
+            <ul>
+              <li id="register_button"><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-memberentry.pl">Register</a></li>
+            </ul>
+            <h3>Borrowing</h3>
+            <ul id="borrowing">
+              <li><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-user.pl">Renew Checked Out Items</a></li>
+              <li><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-shelves.pl">Your Lists</a></li>
+              <li><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-suggestions.pl">Your Purchase Suggestions</a></li>
+            </ul>
+          </div>
+
+
+      </div>
+
+  <div id="hoursModal" class="main" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="false">
+  <h3>Hours Today</h3>
+  <ul>
+    <li><em>8:00am-6:00pm</em></li>
+    <li><a href="#">View Hours this Week</a></li>
+  </ul>
+  <h3>Visit the Library</h3>
+  <ul id="library_address">
+  <li>Little Elm Public Library</li>
+  <li>100 W. Eldorado Pkwy.</li>
+  <li>Little Elm, TX 75068</li>
+  <li>Ph: (214) 975-0430</li>
+  <li>Fax: (214) 618-3582</li>
+  </ul>
+  </section>
+
+
+              <section id="research_area">
+                <section id="logo">
+                <img src="images/lel_logo.png" />
+              </section>
+
+                <section class="research">
+                <h3><em>Search the Catalog</em></h3>
+                <form action="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-search.pl" id="searchform" method="get" name="searchform"><input id="transl1" name="q" type="text">
+                  <select id="masthead_search" name="idx">
+                    <option value="kw">Keyword</option>
+                    <option value="ti">Title</option>
+                    <option value="au">Author</option>
+                    <option value="su">Subject</option>
+                    <option value="nb">ISBN</option>
+                    <option value="se">Series</option>
+                    <option value="callnum">Call Number</option>
+                  </select>
+
+  <a href="#" class="button">Search</a>
+
+  </form>
+
+  <ul class="search_options">
+  <li><a href="">Advanced Search</a></li>
+  <li><a href="#">Suggest a Purchase</a></li>
+  </ul>
+
+  <ul class="search_options">
+  <li class="green_button"><a href="#">Login/My Account</a></li>
+
+  </ul>
+
+  </section>
+
+  </section>
+
+
+  <section class="main_nav">
+
+  <div class="container">
+
+        <div class="row">
+  <nav>
+    <ul>
+      <li><a href="https://lepl.ticketleap.com">Events Calendar</a></li>
+      <li><a href="children.html">Kids & Parents</a></li>
+        <li><a href="teen.html">Teens</a></li>
+      <li><a href="adult.html">Adults</a></li>
+      <li><a href="#">Reference Services</a></li>
+      <li><a href="databases.html">Digital Library</a></li>
+      <li class="active"><a href="#">Seed Library</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </nav>
+
+  </div>
+
+  </div>
+
+  </section>
+
+  </header>
+
+  <section class="seed_opening">
+
+
+   <div class="twelve columns">
+    <section class="event_title">
+      <ul>
+
+        <li class="explore">Seed Library</li>
+      </ul>
+
+
+    </section>
+  </div>
+
+  </section>
+
+  <section id="heading_area">
+
+
+
+    <div class="container">
+
+      <div class="row">
+
+  <div class="six columns">
+
+    <section class="children_event_heading">
+
+
+    <h2>Little Elm Seed Library</h2>
+
+    </section>
+
+    <section class="event_description">
+
+
+    <p>Enjoy the great outdoors, help create a more sustainable world and learn useful new skills! Check out some seeds from our Library and start growing today!</p>
+
+    </section>
+    <section class="event_text">
+
+     <p>Our Seed Library is one of our latest new services and is located in the east corner of the library next to the Printing Station.</p>
+
+    </section>
+</div>
+
+    <div class="six columns">
+
+    <section id="events">
+
+    <img src="images/seedcatalog.png" />
+
+    </section>
+
+    </div>
+    </div>
+
+    </div>
+    </div>
+
+</section>
+
+<div class="container">
+
+<section class="resources_page">
+
+<section class="children_resources">
+
+  <div class="row">
+    <section class="event_text">
+    <h2>Using the Seed Library</h2>
+
+    <p>Patrons can browse the seed packets (which include flowers, herbs, fruits and vegetables) or they can consult the index on the table next to the seeds. Up to eight packets of seed can be checked out per library card. </p>
+    <p>After making their selection, the seeds are checked out at the circulation desk for a period of six months. This way, patrons can grow the plants, harvest them and return new seeds for other patrons to enjoy. However, in the case of crop failure, returning the seeds is not mandatory.</p>
+     <p>Additionally, if you need further information on growing your plants, the library has numerous books on gardening and landscaping. If you have a particular book that you would like to request or a certain plant that you would like seeds for, please let us know.</p>
+  </section>
+
+  <section class="event_text">
+     <h2>Seed Library and Gardening Links</h2>
+     <p>The Little Elm Library is not the only place to have a seed library or resources for gardeners. Check out the links below for other things that may interest you.</p>
+     <section class="resources">
+      <ul class="resource">
+       <li>SeedLibraries.org</li>
+       <li>A social network with news, events and links to seed libraries worldwide.</li>
+       <a class="online_button" href="http://seedlibraries.org/">Access</a>
+      </ul>
+
+
+  </section>
+  <section class="resources">
+   <ul class="resource">
+    <li>Keep Little Elm Beautiful</li>
+    <li>A nonprofit organization dedicated to maintaining and improving Little Elm</li>
+    <a class="online_button" href="http://www.littleelm.org/index.aspx?NID=489">Access</a>
+   </ul>
+
+
+</section>
+
+<section class="resources">
+ <ul class="resource">
+  <li>Wildflower.org</li>
+  <li>The Lady Bird Johnson Wildflower Center at The University of Texas at Austin.</li>
+  <a class="online_button" href="http://www.wildflower.org/">Access</a>
+ </ul>
+
+
+</section>
+
+</div>
+
+</section>
+
+</section>
+
+</div>
+  <footer>
+
+    <div class="container">
+
+          <div class="row">
+
+
+                <div class="twelve columns">
+
+
+  <section id="footer_content">
+
+  <section id="littleelm_footer">
+
+  <img src="images/littleelm.png" />
+
+  <ul id="little_elm_social">
+  <li><a href="http://www.facebook.com/littleelmlibrary"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+  <li><a href="https://twitter.com/littleelmtx"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+  </ul>
+
+  </section>
+
+  <section>
+
+  <ul>
+    <li>Little Elm Public Library</li>
+    <li>100 W. Eldorado Pkwy.</li>
+    <li>Little Elm, TX 75068</li>
+    <li>Ph: (214) 975-0430</li>
+    <li>Fax: (214) 618-3582</li>
+    <li><em>Need Help?</em> <a href="mailto:reference@littleelmlibrary.org">reference@littleelmlibrary.org</a></li>
+  </ul>
+  </section>
+
+  </section>
+
+  </div>
+
+  </div>
+
+  </div>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+  <script src="https://widgets.ticketleap.com/v2/widget.js" type="text/javascript"></script>
+
+      <script src="js/animation.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/unslider.js"></script>
+
+
+      <script>
+  		jQuery(document).ready(function($) {
+  			$('.my-slider').unslider();
+        $('.new-slider').unslider();
+  		});
+  	</script>
+
+  </body>
+
+  </html>
