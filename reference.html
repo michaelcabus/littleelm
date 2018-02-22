@@ -24,110 +24,128 @@
 
 
 </head>
-<body>
+<body id="reference">
 
-<header>
+  <header>
 
-<section class="topnav">
+  <section class="topnav">
 
-
-<ul>
-<li><a href="">Click here</a> for our Summer Reading Program Calendar for
-Both Kids and Adults.</li>
-<li>The Library will be closed Tuesday, July 4th for Independence Day</li>
-</ul>
-
-<div class="menu-collapsed">
-<div class="bar"></div>
-<nav>
   <ul>
-     <li>Library Hours</li>
-     <li><a href="#">Monday, 9-5</a></li>
-     <li><a href="#">Tuesday, 9-5</a></li>
-     <li><a href="#">Wednesday-Friday, 10-6</a></li>
-     <li><a href="#">Saturday-Sunday, 10-6</a></li>
+  <li>Holiday Closure: Monday, January 15th-Martin Luther King, Jr. Observance </li>
+
   </ul>
-</nav>
-</div>
 
-</section>
+  <!--<ul>
+  <li class="hours-toggle">
+   <a href="#"><i class="fa fa-map-o" aria-hidden="true"></i> Hours and Location</a></li>
+   <li class="card-toggle">
+    <a href="#"><i class="fa fa-book" aria-hidden="true"></i>
+   Get a Library Card!</a></li>
+   <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i>
+    Support and Volunteer</a></li>
+    <li><a href=""><i class="fa fa-question-circle" aria-hidden="true"></i>
+     Get Help</a></li>
+  <li class="button sidebar dropdown-toggle" id="login"><a href="#">Login/My Account</a>
 
-<div class="container">
+    </li>
+  </ul>-->
 
-  <div class="row">
-
-
-        <div class="six columns">
-          <img src="images/lel_logo.png" />
-
-          <div class="donate_button">Support Your Library</div>
-          <div class="volunteer_button">Volunteer at Your Library</div>
-
-        </div>
-
-        <div class="six columns">
-
-          <section class="research">
-          <h3><em>Books, Movies and More For <span>Children and Teens</span></em></h3>
-          <form action="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-search.pl" id="searchform" method="get" name="searchform"><input placeholder="search for children and teen items" id="transl1" name="q" type="text">
-            <select id="masthead_search" name="idx">
-              <option value="kw">Keyword</option>
-              <option value="ti">Title</option>
-              <option value="au">Author</option>
-              <option value="su">Subject</option>
-              <option value="nb">ISBN</option>
-              <option value="se">Series</option>
-              <option value="callnum">Call Number</option>
-            </select>
-
-<a href="#" class="button">Search</a>
-
-<ul class="search_options">
-<li><a href="">Advanced Search</a></li>
-<li><a href="">Login to your Account</a></li>
-</ul>
-
-</form>
-<nav>
-<ul>
-<li><a href="databases.html" class="button green_button">Research, Ebooks & Digital Resources</a></li>
-<li><a href="#" class="button green_button">Suggest a Purchase</a></li>
-</ul>
-</nav>
-
-</section>
+  <div id="loginModal" class="main" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="false">
+          <div class="modal-header">
+            <h3>Create an Account</h3>
+            <ul>
+              <li id="register_button"><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-memberentry.pl">Register</a></li>
+            </ul>
+            <h3>Borrowing</h3>
+            <ul id="borrowing">
+              <li><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-user.pl">Renew Checked Out Items</a></li>
+              <li><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-shelves.pl">Your Lists</a></li>
+              <li><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-suggestions.pl">Your Purchase Suggestions</a></li>
+            </ul>
+          </div>
 
 
-        </div>
+      </div>
 
+  <div id="hoursModal" class="main" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="false">
+  <h3>Hours Today</h3>
+  <ul>
+    <li><em>8:00am-6:00pm</em></li>
+    <li><a href="#">View Hours this Week</a></li>
+  </ul>
+  <h3>Visit the Library</h3>
+  <ul id="library_address">
+  <li>Little Elm Public Library</li>
+  <li>100 W. Eldorado Pkwy.</li>
+  <li>Little Elm, TX 75068</li>
+  <li>Ph: (214) 975-0430</li>
+  <li>Fax: (214) 618-3582</li>
+  </ul>
+  </section>
+
+
+              <section id="research_area">
+                <section id="logo">
+                <img src="images/lel_logo.png" />
+              </section>
+
+                <section class="research">
+                <h3><em>Search the Catalog</em></h3>
+                <form action="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-search.pl" id="searchform" method="get" name="searchform"><input id="transl1" name="q" type="text">
+                  <select id="masthead_search" name="idx">
+                    <option value="kw">Keyword</option>
+                    <option value="ti">Title</option>
+                    <option value="au">Author</option>
+                    <option value="su">Subject</option>
+                    <option value="nb">ISBN</option>
+                    <option value="se">Series</option>
+                    <option value="callnum">Call Number</option>
+                  </select>
+
+  <a href="#" class="button">Search</a>
+
+  </form>
+
+  <ul class="search_options">
+  <li><a href="">Advanced Search</a></li>
+  <li><a href="#">Suggest a Purchase</a></li>
+  </ul>
+
+  <ul class="search_options">
+  <li class="green_button"><a href="#">Login/My Account</a></li>
+
+  </ul>
+
+  </section>
+
+  </section>
+
+
+  <section class="main_nav">
+
+  <div class="container">
+
+        <div class="row">
+  <nav>
+    <ul>
+      <li><a href="https://lepl.ticketleap.com">Events Calendar</a></li>
+      <li><a href="children.html">Kids & Parents</a></li>
+        <li><a href="children.html">Teens</a></li>
+      <li><a href="adult.html">Adults</a></li>
+      <li><a href="reference.html">Reference Services</a></li>
+      <li><a href="databases.html">Digital Library</a></li>
+      <li><a href="seedlibrary.html">Seed Library</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </nav>
 
   </div>
 
+  </div>
 
-</div>
+  </section>
 
-<section class="main_nav">
-
-<div class="container">
-
-  <div class="row">
-<nav>
-<ul>
-  <li><a href="#">Events at the Library</a></li>
-  <li><a href="children.html">For Children and Young Adults</a></li>
-  <li><a href="adult.html">For Adults</a></li>
-  <li><a href="#">Reference Services</a></li>
-  <li><a href="#">Visiting the Library</a></li>
-</ul>
-</nav>
-
-</div>
-
-</div>
-
-</section>
-
-</header>
+  </header>
 
 
 <section class="children_opening">
@@ -145,3 +163,239 @@ Both Kids and Adults.</li>
 </div>
 
 </section>
+
+<div class="container">
+
+  <div class="row">
+
+
+
+<section id="events" style="">
+
+  <section id="upcoming-events-widget">
+       <h2>Upcoming Computer Classes</h2>
+<p>The Computer Classes for Fall 2017 are here! Classes will be from 6-7 PM in the Computer Lab area in the far right corner of the public computer section. <em>Class Dates are: Beginning Computers- Sept. 11 & Oct. 23, Microsoft Word- Sept. 18 & Oct. 30, Microsoft Excel- Sept. 25 & Nov. 6, Microsoft PowerPoint- Oct. 2 & Nov. 6, Microsoft Office Suite- Oct. 9 & Nov. 20 and General Questions- Oct. 16 & Nov. 27.</em></p>
+
+<p>To sign up, you can do so at the Library's Front Desk, call, sign up on Ticketleap here or email: <a href="mailto:KAnderson@littleelm.org">KAnderson@littleelm.org</a>.</p>
+</section>
+
+</section>
+</div>
+
+</div>
+
+<section id="heading_area">
+
+
+
+  <div class="container">
+
+    <div class="row">
+
+<div class="six columns">
+
+<section class="children_event_heading">
+
+
+<h2>Reference Services</h2>
+
+</section>
+
+<section class="event_description">
+
+<p>Do you require help finding what you need? Reference services can assist you in locating information and can help you to further use the library's tools and resources.</p>
+
+</section>
+
+<section class="event_text">
+
+
+
+          <h3>Need Reference Help?</h3>
+
+
+
+
+  <p> If you have any questions, please email: <a href="mailto:reference@littleelmlibrary.org">reference@littleelmlibrary.org</a> or call 214-975-0430</p>
+
+</section>
+
+<section class="event_text">
+
+<h3>Interlibrary Loan</h3>
+
+<p>If you need a journal article, book or other loanable material that the Little Elm Public Library does not own, the Library's Interlibrary Loan (ILL) service will
+  attempt to get it for you. You may request or have active two items at any one time.</p>
+
+<ul class="resource">
+  <li>
+<a class="online_button" href="http://texasgroup.worldcat.org/">Request an Item Through Interlibrary Loan</a>
+</li>
+</ul>
+
+<h3><em>Tips for Using Interlibrary Loan</em></h3>
+
+<ul class="resource">
+  <li>When searching for an item, you will see a list of libraries owning the item. This is information for you to consult, but you do not need to pick one of these libraries.</li>
+    <li>The ILL system will make the choice based on availability. If the Little Elm Public Library System owns the desired item, you cannot request it through Interlibrary Loan, but you can search the library catalog and place a hold there.</li>
+    <li>Under "Find a copy in the Library," you do not need to choose one of the libraries that own the item. The system with pick for you.</li>
+    <li>If you do not have an email address, type "none." The preferred method of contact is email. However, if you do not have an email address, staff will contact you by phone.</li>
+    <li><a class="online_button" href="http://littleelmlibrary.org/images/naviagtor%20public%20instructions.pdf">Interlibrary Loan Users Guide</a></li>
+</ul>
+
+</section>
+
+
+</div>
+
+<div class="six columns">
+
+<section class="children_event_heading">
+
+<h2>Library Services</h2>
+</section>
+
+<section class="event_description">
+
+<p>Whether personal or professional, we offer services to help keep you connected, including free Wi-Fi, staff-assisted faxing, copying and scanning, and 30 public computers.</p>
+
+</section>
+
+<section class="event_text">
+
+<h3>Public Computers</h3>
+
+<p> Public computers have black and white/color printing capability, and we also offer large-format/poster printing and 3D printing.  Please email reference@littleelmlibrary.org or call 214-975-0430 for more info.</p>
+
+</section>
+
+<section class="event_text">
+
+<h3>Meeting Spaces</h3>
+
+<p> The library offers convenient meeting rooms by appointment for individual use or to small groups and non-profit organizations. Equipment includes:</p>
+
+ <ul>
+ <li>flat panel display screen,
+<li>an interactive whiteboard projector,
+<li>webcam,
+  <li>and microphone.</li>
+</ul>
+  <p>We also have two small meeting rooms which may be checked out via library card on a first-come-first-served basis.</p>
+
+  <p>If you have any questions, please email <a href="mailto:reference@littleelmlibrary.org">reference@littleelmlibrary.org</a> or call 214-975-0430.</p>
+
+</section>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+</section>
+
+<div class="container">
+
+<section class="resources_page">
+
+<section class="children_resources">
+
+  <div class="row">
+    <section class="event_text">
+    <h2>Reference Resources</h2>
+
+  <section class="resources">
+    <ul class="resource">
+     <li>TexShare Databases</li>
+     <li>You can use your Library username and password to access databases on a wide variety of subjects.</li>
+     <a class="online_button" href="http://ezproxy.littleelmlibrary.org/">Access</a>
+    </ul>
+
+    <ul class="resource">
+     <li>ReferenceUSA</li>
+     <li>You can use your Library username and password to access information on people, businesses, healthcare and other topics.</li>
+     <a class="online_button" href="http://www.referenceusa.com.ezproxy.littleelmlibrary.org/">Access</a>
+    </ul>
+
+    <ul class="resource">
+     <li>Federal Student Aid</li>
+     <li>For new and continuing Students</li>
+     <a class="online_button" href="http://www.littleelmlibrary.org/children.html">Access</a>
+    </ul>
+
+    <ul class="resource">
+     <li>Life Long Learning</li>
+     <li>Check the Library Calendar for details on the next available class. Registration is frequently required, so contact us to reserve your space.</li>
+      <li>All classes are basic and designed to give the student a start in many different subjects.</li>
+     <li>If you have any questions, please email <a href="mailto:library@littleelmlibrary.org">library@littleelmlibrary.org</a> or call 214-975-0430.</li>
+    </ul>
+
+  </section>
+
+<section class="resources">
+  <ul class="resource">
+    <li>Proctoring Exams</li>
+  <li>Little Elm Public Library has three qualified librarians that proctor exams for distance and continuing education students. Let us help!</li>
+  <li>Email us: <a href="mailto:reference@littleelmlibrary.org">reference@littleelmlibrary.org</a> or call 214-975-0430.</li>
+  </ul>
+
+</section>
+
+</div>
+
+</section>
+
+</section>
+
+</section>
+
+</div>
+
+
+<footer>
+
+  <div class="container">
+
+        <div class="row">
+
+
+              <div class="twelve columns">
+
+
+<section id="footer_content">
+
+<section id="littleelm_footer">
+
+<img src="images/littleelm.png" />
+
+<ul id="little_elm_social">
+<li><a href="http://www.facebook.com/littleelmlibrary"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+<li><a href="https://twitter.com/littleelmtx"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+</ul>
+
+</section>
+
+<section>
+
+<ul>
+  <li>Little Elm Public Library</li>
+  <li>100 W. Eldorado Pkwy.</li>
+  <li>Little Elm, TX 75068</li>
+  <li>Ph: (214) 975-0430</li>
+  <li>Fax: (214) 618-3582</li>
+  <li><em>Need Help?</em> <a href="mailto:reference@littleelmlibrary.org">reference@littleelmlibrary.org</a></li>
+</ul>
+</section>
+
+</section>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
