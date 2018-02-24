@@ -1,3 +1,88 @@
+h4 {
+
+    font-size: 1.58rem !important;
+    margin: 1.14rem 0 0.912rem 0;
+    font-weight: 300 !important;
+    line-height: normal !important;
+
+}
+
+.library_staff {
+  h1 {
+
+      text-align: center;
+
+  }
+
+a {
+
+    color: #05845A;
+    font-family: "eskorte-latin";
+    text-decoration: none;
+
+}
+
+li {
+
+  list-style: none;
+}
+
+}
+
+#about_container {
+    border-bottom: 2px solid #498CC8;
+    padding: 10px;
+    background-color: #f4f4f2;
+
+.about_hours {
+    display: flex;
+    justify-content: space-around;
+
+   h1 {
+        font-family: "museo";
+        font-size: 2em !important;
+    }
+  li {
+    list-style: none;
+
+color: #022b57;
+
+font-family: "eskorte-latin";
+
+margin: 0px;
+
+font-size: .8em;
+
+}
+
+   h2 {
+     color: #022b57;
+     font-family: "eskorte-latin";
+     font-size: 1.2em !important;
+   }
+
+    section {
+      border: 1px solid #fcca67;
+      background-color: #ffffff;
+      padding: 20px;
+min-width: 450px;
+
+    }
+
+}
+
+}
+
+.about_hours li {
+
+  list-style: none;
+
+color: #022b57;
+
+font-family: "eskorte-latin";
+
+}
+
 .search_options {
 
     margin: 0px;
@@ -668,6 +753,7 @@ font-size:19px;
        color:#ffffff;
        text-decoration: none;
        text-transform: uppercase;
+       padding: 0px;
 
 
 
@@ -919,7 +1005,7 @@ box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
 
 .adult_opening {
   background: url("../images/adult.png") center;
-  background-size:cover;
+  background-size:contain;
   border-bottom: 2px #0bacd8 solid;
   height: 202px;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
