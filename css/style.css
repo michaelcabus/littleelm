@@ -1,3 +1,143 @@
+#events img {
+  width: 100%; }
+
+.online_button {
+  text-decoration: none;
+  color: #ffffff !important;
+  flex: 1 1 auto;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 3px 0px 0px 3px;
+  transition: background-color 2s;
+  background-color: #0C69BD; }
+  .online_button a {
+    color: #ffffff !important; }
+
+#bylaws {
+  padding: 20px; }
+  #bylaws p {
+    padding: 20px; }
+
+.library_staff h2 {
+  color: #008156; }
+
+.heading_friends {
+  color: #022b57;
+  font-family: "eskorte-latin";
+  font-size: 20px; }
+
+.friends_events img {
+  width: 76%; }
+
+.friends_container {
+  border-bottom: 2px solid #498CC8; }
+
+.friends_event_item {
+  list-style: none;
+  border-right: .5px dotted #008156;
+  width: 100%;
+  background-color: #f0f4f6;
+  height: 100%; }
+  .friends_event_item .event_text {
+    background-color: transparent;
+    padding: 10px; }
+
+.friends_events p {
+  font-family: "eskorte-latin";
+  font-size: 18px; }
+
+a.tl-button {
+  letter-spacing: 1.2px !important;
+  display: inline-block !important;
+  font-family: museo-sans,sans-serif !important;
+  font-size: 12px !important;
+  font-weight: normal !important;
+  margin: 0 !important;
+  padding: 6px 10px 7px !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  border-radius: 3px !important; }
+
+a.tl-button span {
+  text-transform: uppercase;
+  color: #fff !important;
+  font-weight: 700 !important; }
+
+.library_policies h2, .library_questions h2 {
+  text-align: center; }
+
+.material-icons.expand {
+  font-size: 21px; }
+
+.fa.fa-arrow-circle-up {
+  font-size: 21px; }
+
+.card-body li {
+  list-style: none;
+  color: #022b57;
+  font-family: "eskorte-latin";
+  margin: 0px;
+  font-size: 1.2em; }
+
+.cards {
+  width: 500px;
+  margin: 0 auto; }
+  .cards .card {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    transition: all 0.3s; }
+    .cards .card .card-header {
+      text-transform: uppercase;
+      position: relative;
+      padding: 10px;
+      color: #05845A;
+      width: 94%; }
+      .cards .card .card-header button.card-expand {
+        position: absolute;
+        right: 0;
+        top: 0;
+        line-height: 10px;
+        vertical-align: middle;
+        height: 39px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer; }
+        .cards .card .card-header button.card-expand:hover {
+          background-color: #F9F9F9; }
+        .cards .card .card-header button.card-expand .expand {
+          display: block; }
+        .cards .card .card-header button.card-expand .close {
+          display: none; }
+    .cards .card .card-footer {
+      border-top: 1px solid #eee;
+      text-transform: uppercase; }
+      .cards .card .card-footer a {
+        color: #757575;
+        text-decoration: none; }
+    .cards .card .card-body,
+    .cards .card .card-footer {
+      padding: 10px; }
+    .cards .card .card-inner {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s; }
+    .cards .card.expanded {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+      .cards .card.expanded .card-inner {
+        max-height: 500px; }
+      .cards .card.expanded button.card-expand .expand {
+        display: none; }
+      .cards .card.expanded button.card-expand .close {
+        display: block; }
+      .cards .card.expanded .card-header {
+        border-bottom: 1px solid #eee; }
+
 h4 {
   font-size: 1.58rem !important;
   margin: 1.14rem 0 0.912rem 0;
@@ -22,17 +162,17 @@ h4 {
     justify-content: space-around; }
     #about_container .about_hours h1 {
       font-family: "museo";
-      font-size: 2em !important; }
+      font-size: 3em !important; }
     #about_container .about_hours li {
       list-style: none;
       color: #022b57;
       font-family: "eskorte-latin";
       margin: 0px;
-      font-size: .8em; }
+      font-size: 1.2em; }
     #about_container .about_hours h2 {
       color: #022b57;
       font-family: "eskorte-latin";
-      font-size: 1.2em !important; }
+      font-size: 2.2em !important; }
     #about_container .about_hours section {
       border: 1px solid #fcca67;
       background-color: #ffffff;
@@ -308,7 +448,8 @@ aside {
   width: 26%;
   background-color: #ffffff;
   padding: 20px;
-  border-left: 1px solid green; }
+  border-left: 1px solid green;
+  z-index: 999999; }
   aside h3 {
     color: #05845A;
     font-size: 1.5em; }
@@ -604,6 +745,22 @@ header {
   height: 202px;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); }
   .about_opening .event_title ul li {
+    font-family: "museo";
+    color: #ffffff;
+    list-style: none;
+    font-size: 42px;
+    margin-right: 51px;
+    z-index: 99999;
+    font-weight: 600;
+    text-align: center; }
+
+.friends_opening {
+  background: url("../images/friendstile.png");
+  background-size: cover;
+  border-bottom: 2px #0bacd8 solid;
+  height: 202px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); }
+  .friends_opening .event_title ul li {
     font-family: "museo";
     color: #ffffff;
     list-style: none;
@@ -955,6 +1112,43 @@ header {
   #footer_content {
     display: flex;
     justify-content: space-between;
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .resources {
+    display: flex;
+    flex-direction: column; }
+
+  #events {
+    padding: 0px;
+    background-color: #f8f8f9 !important;
+    float: left; }
+
+  .children_events h2 {
+    font-family: "eskorte-latin";
+    color: #022b57;
+    text-align: center;
+    border: 2px solid black;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0px; }
+
+  #online .ebooks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-direction: column; }
+
+  #about_container .about_hours section {
+    border: 1px solid #fcca67;
+    background-color: #ffffff;
+    padding: 20px;
+    min-width: 0px; }
+
+  .cards {
+    width: 100% !important;
+    margin: 0 auto; }
+
+  .cards .card .card-header button.card-expand {
+    position: relative; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,14 @@
 
 
    $(document).ready(function() {
+
+     $('.card-expand').click(function(){
+       $(this).parent().parent().toggleClass('expanded');
+     })
+
+     var cardHeight = $('.card.expanded').innerHeight();
+     $('.card.expanded .card-inner').css('max-height', cardHeight);
+
      $("#events").fadeOut();
      $("#event_name").fadeOut();
      $("#event_description").fadeOut();

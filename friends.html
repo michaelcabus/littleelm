@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--style-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/html5reset.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Lora|Playfair+Display" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- load angular and angular route via CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+ <!--Keppler-->
+  <script src="https://use.typekit.net/nak4aee.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<!--Mrs. Eaves Font-->
+  <script src="https://use.typekit.net/kcc4omr.js"></script>
+
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
+</head>
+<body id="reference">
+
+  <header>
+
+  <section class="topnav">
+
+  <ul>
+  <li>Holiday Closure: Monday, January 15th-Martin Luther King, Jr. Observance </li>
+
+  </ul>
+
+  <!--<ul>
+  <li class="hours-toggle">
+   <a href="#"><i class="fa fa-map-o" aria-hidden="true"></i> Hours and Location</a></li>
+   <li class="card-toggle">
+    <a href="#"><i class="fa fa-book" aria-hidden="true"></i>
+   Get a Library Card!</a></li>
+   <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i>
+    Support and Volunteer</a></li>
+    <li><a href=""><i class="fa fa-question-circle" aria-hidden="true"></i>
+     Get Help</a></li>
+  <li class="button sidebar dropdown-toggle" id="login"><a href="#">Login/My Account</a>
+
+    </li>
+  </ul>-->
+
+  <div id="loginModal" class="main" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="false">
+          <div class="modal-header">
+            <h3>Create an Account</h3>
+            <ul>
+              <li id="register_button"><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-memberentry.pl">Register</a></li>
+            </ul>
+            <h3>Borrowing</h3>
+            <ul id="borrowing">
+              <li><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-user.pl">Renew Checked Out Items</a></li>
+              <li><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-shelves.pl">Your Lists</a></li>
+              <li><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-suggestions.pl">Your Purchase Suggestions</a></li>
+            </ul>
+          </div>
+
+
+      </div>
+
+  <div id="hoursModal" class="main" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="false">
+  <h3>Hours Today</h3>
+  <ul>
+    <li><em>8:00am-6:00pm</em></li>
+    <li><a href="#">View Hours this Week</a></li>
+  </ul>
+  <h3>Visit the Library</h3>
+  <ul id="library_address">
+  <li>Little Elm Public Library</li>
+  <li>100 W. Eldorado Pkwy.</li>
+  <li>Little Elm, TX 75068</li>
+  <li>Ph: (214) 975-0430</li>
+  <li>Fax: (214) 618-3582</li>
+  </ul>
+  </section>
+
+
+              <section id="research_area">
+                <section id="logo">
+                <img src="images/lel_logo.png" />
+              </section>
+
+                <section class="research">
+                <h3><em>Search the Catalog</em></h3>
+                <form action="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-search.pl" id="searchform" method="get" name="searchform"><input id="transl1" name="q" type="text">
+                  <select id="masthead_search" name="idx">
+                    <option value="kw">Keyword</option>
+                    <option value="ti">Title</option>
+                    <option value="au">Author</option>
+                    <option value="su">Subject</option>
+                    <option value="nb">ISBN</option>
+                    <option value="se">Series</option>
+                    <option value="callnum">Call Number</option>
+                  </select>
+
+  <a href="#" class="button">Search</a>
+
+  </form>
+
+  <ul class="search_options">
+  <li><a href="">Advanced Search</a></li>
+  <li><a href="#">Suggest a Purchase</a></li>
+  </ul>
+
+  <ul class="search_options">
+  <li class="green_button"><a href="#">Login/My Account</a></li>
+
+  </ul>
+
+  </section>
+
+  </section>
+
+
+  <section class="main_nav">
+
+  <div class="container">
+
+        <div class="row">
+  <nav>
+    <ul>
+      <li><a href="https://lepl.ticketleap.com">Events Calendar</a></li>
+      <li><a href="children.html">Kids & Parents</a></li>
+        <li><a href="children.html">Teens</a></li>
+      <li><a href="adult.html">Adults</a></li>
+      <li><a href="reference.html">Reference Services</a></li>
+      <li><a href="databases.html">Digital Library</a></li>
+      <li><a href="seedlibrary.html">Seed Library</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </nav>
+
+  </div>
+
+  </div>
+
+  </section>
+
+  </header>
+  <section class="friends_opening">
+
+
+   <div class="twelve columns">
+    <section class="event_title">
+      <ul>
+
+        <li class="explore">Little Elm Friends of the Library</li>
+      </ul>
+
+
+    </section>
+  </div>
+
+
+  </section>
+
+  <section id="heading_area">
+
+
+
+    <div class="container">
+
+      <div class="row">
+
+  <div class="six columns">
+
+  <section class="children_event_heading">
+
+
+  <h2>About Our Organization</h2>
+
+  </section>
+
+  <section class="event_description">
+
+
+  <p>The Little Elm Friends of the Library is a dedicated group of people who are committed to sustaining and improving the Library.</p>
+
+  </section>
+
+  <section class="event_text">
+       <h3>Meetings</h3>
+
+       <p><em>Little Elm Friends of the Library meetings are open to the public at the Little Elm Public Library, 100 W. Eldorado Parkway (214-975-0430). Most meetings are on the third Wednesday of the month, but check the calendar for actual dates and other events.</em></p>
+
+       <h3>Past Meeting Minutes</h3>
+       <select name="" id="cusSelectbox"  onchange="location = this.value;">
+          <option value="#" selected="selected">Select Minutes</option>
+    			<option value="http://www.littleelmlibrary.org/images/Jan2018FOLMinutes.pdf">January 2017</option>
+    			<option value="http://www.littleelmlibrary.org/images/2017-12-FOLMinutes.pdf">December 2017</option>
+    			<option value="http://www.littleelmlibrary.org/images/2017NovFOLMinutes.pdf">November 2017</option>
+    			<option value="http://www.littleelmlibrary.org/images/Oct2017FOLMinutes.pdf">October 2017</option>
+    			<option value="http://www.littleelmlibrary.org/images/Sept2017Minutes.pdf">September 2017</option>
+    			<option value="http://www.littleelmlibrary.org/images/AugFOLMinutes.pdf">August 2017</option>
+    		</select>
+
+
+  </section>
+
+</div>
+
+<div class="six columns">
+
+<section id="events">
+
+  <section id="upcoming-events-widget">
+       <h2>Join the Friends of the Library</h2>
+       <div class="tl-buy-list-action">
+                 <a class="tl-button" href="http://www.littleelmlibrary.org/images/FOLMemberForm.pdf" style="background-color: #e5422c !important;">
+                     <span class="tl-button-text">Join Now!</span>
+                 </a>
+                 <p><em>Don't know when your FOL membership expires? Look on the mailing label of the current Newsletter. Your expiration date is in parenthesis behind your name on the label;for example, John Doe (December 2013).</em></p>
+             </div>
+
+       </section>
+
+       <section id="upcoming-events-widget">
+            <h2>Upcoming Events</h2>
+
+            <div class="tl-buy-list-action">
+                      <a class="tl-button" href="http://www.littleelmlibrary.org/images/CurrentFOL2018Calendar.pdf" style="background-color: #e5422c !important;">
+                          <span class="tl-button-text">View Events</span>
+                      </a>
+                  </div>
+            </section>
+
+            <section id="upcoming-events-widget">
+                 <h2>Friends Facebook Page</h2>
+
+                 <div class="tl-buy-list-action">
+                           <a class="tl-button" href="https://www.facebook.com/littleelmfol" style="background-color: #e5422c !important;">
+                               <span class="tl-button-text">Like Us on Facebook</span>
+                           </a>
+                       </div>
+                 </section>
+
+</section>
+
+</div>
+
+</section>
+    </div>
+
+
+</div>
+
+</div>
+
+</section>
+
+<section class="friends_container">
+
+<section class="children_resources">
+
+  <div class="container">
+    <section class="event_text">
+    <h2>Friends Resources</h2>
+  </section>
+     <div class="row">
+
+<div class="six columns">
+
+<section class="friends_event_item">
+
+<section class="event_text">
+
+<h3>Library News Letter</h3>
+
+</section>
+
+</section>
+
+</div>
+
+<div class="six columns">
+
+<section class="friends_event_item">
+
+<section class="event_text">
+
+<h3>Friends Scholarship</h3>
+
+<p>Friends of the Library Scholarships opportunities are available for Junior and Senior high school students. Click below for further details and an application that you can print out.</p>
+
+<div class="tl-buy-list-action">
+          <a class="tl-button" href="http://www.littleelmlibrary.org/images/ScholarshipApplicationForm2018.pdf" style="background-color: #e5422c !important;">
+              <span class="tl-button-text">Scholarship Application</span>
+          </a>
+      </div>
+
+</section>
+
+</div>
+
+
+
+</section>
+
+</div>
+
+
+</div>
+
+</section>
+
+</section>
+
+<section class="friends_events">
+
+  <div class="container">
+
+
+    <section class="children_resources">
+        <section class="event_text">
+        <h2>Recent Events</h2>
+      </section>
+    </section>
+
+<div class="row">
+
+
+<div class="six columns">
+
+<h2 class="heading_friends">Trivia 2017 Was a Roaring Success!</h2>
+
+<img src="images/TheWinners2017.jpg" />
+
+
+<p>The McKinney Team (Captained by former Little Elm Library Director, Spencer Smith) donated their $500 Grand Prize back to the Little Elm Friends.  Thanks for supporting your public library!</p>
+
+<p>Trivia Night is the annual major fundraiser for Little Elm Friends of the Library in Little Elm, Texas. Now in its 18th year, Trivia has been a major tradition for many of Little Elm's residents and businesses. It's a fun and competitive way to interact with friends, family, and coworkers.  Over the years, the Friends organization has used proceeds to purchase many resources for the Little Elm Public Library, including reference books, furniture, computers, sculptures, online resource subscriptions, and much more.   Recently, we purchased about $35,000 in assets for the expanded library using proceeds from past Trivia Night events!</p>
+
+<p>Each year, the event hosts over 50 teams from the community to compete against each other during an evening of fun, food, and prizes. Concessions (BBQ sandwiches, chips, pizza, popcorn, drinks, and candy) are available at the event, so we ask that you do not bring in outside food.   We also have great drawings and a silent auction. Awards will be given out for best team costumes and best team spirit. The grand prize for the trivia competition is $500 cash to the winning team!  The winning team gets possesion of the coveted Trivia trophy for the remainder of the year!</p>
+
+</div>
+
+<div class="six columns">
+
+
+  <h2 class="heading_friends">Little Elm Friends of the Library Scholarships</h2>
+
+<img src="images/FOLScholarships2017.jpg" />
+
+
+<p>Congratulations to this year's recipients of the annual Little Elm Friends of the Library Scholarships!</p>
+
+<p>Uchechi Oguh has been awarded a $1,000 scholarship. Caroline Withers and Diego Raygoza-Castanos have each been awarded $500 scholarships.</p>
+
+<p>FOL scholarships are merit-based and require the applicants to meet GPA, references and volunteer hours guidelines. Selection of awardees is a joint effort between FOL representatives and Library staff. Thanks to all that applied!</p>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="library_staff">
+
+
+
+<div class="container">
+
+
+
+<div class="six columns">
+
+<h2>Board Members</h2>
+
+<h4>President- Michel Hambrick</h4>
+
+
+<h4>Vice President- Jen Morick</h4>
+
+<h4>Treasurer- Joe Deaver</h4>
+
+<h4>Secretary- Diana Russell</h4>
+
+<h4>At Large- Sandi Saboni, Jane Schoknecht and Linda Downey</h4>
+
+<section id="bylaws">
+
+<a href="http://www.littleelmlibrary.org/images/FOL%20Job%20Descriptions.pdf" class="online_button">Job Descriptions</a>
+
+<a href="http://www.littleelmlibrary.org/images/LEFOL%20ByLaws%20-%202018.pdf" class="online_button">ByLaws</a>
+
+<p><em>Questions or comments can be addressed to FOL Secretary, PO Box 598, Little Elm, TX 75068 or via email to secretary@littleelmfol.org.</em></p>
+</section>
+
+</div>
+
+<div class="six columns">
+
+<h2>FOL Board Appointments</h2>
+
+<h4>Membership:  Lynn Hidell</h4>
+
+<h4>Newsletter Editor: Randy Farmer</h4>
+
+<h4>Public Relations: Erin Mudie</h4>
+
+<h4>Volunteer Coordinator: Kay Bell</h4>
+
+<h4>Scholarships: Tony Luton</h4>
+
+<h4>Information Technology (IT): Vacant</h4>
+
+<h4>Historian:  Vacant</h4>
+
+<h4>Book Sales Coordinator: Linda Downey</h4>
+
+<h4>Trivia Coordinator: Sandi Sabonis & Claudia Stooksberry</h4>
+
+</div>
+
+</div>
+
+</section>
+
+  <footer>
+
+    <div class="container">
+
+          <div class="row">
+
+
+                <div class="twelve columns">
+
+
+  <section id="footer_content">
+
+  <section id="littleelm_footer">
+
+  <img src="images/littleelm.png" />
+
+  <ul id="little_elm_social">
+  <li><a href="http://www.facebook.com/littleelmlibrary"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+  <li><a href="https://twitter.com/littleelmtx"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+  </ul>
+
+  </section>
+
+  <section>
+
+  <ul>
+    <li>Little Elm Public Library</li>
+    <li>100 W. Eldorado Pkwy.</li>
+    <li>Little Elm, TX 75068</li>
+    <li>Ph: (214) 975-0430</li>
+    <li>Fax: (214) 618-3582</li>
+    <li><em>Need Help?</em> <a href="mailto:reference@littleelmlibrary.org">reference@littleelmlibrary.org</a></li>
+  </ul>
+  </section>
+
+  </section>
+
+  </div>
+
+  </div>
+
+  </div>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+  <script src="https://widgets.ticketleap.com/v2/widget.js" type="text/javascript"></script>
+
+      <script src="js/animation.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/unslider.js"></script>
