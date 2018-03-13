@@ -31,128 +31,9 @@
    <link href="https://widgets.ticketleap.com/v2/widget.css" media="screen" rel="stylesheet" type="text/css" />
 
 </head>
-<body>
+<body ng-app="littleelmSite">
 
-  <header>
-
-  <section class="topnav">
-
-  <ul>
-  <li>Holiday Closure: Monday, January 15th-Martin Luther King, Jr. Observance </li>
-
-  </ul>
-
-  <!--<ul>
-  <li class="hours-toggle">
-   <a href="#"><i class="fa fa-map-o" aria-hidden="true"></i> Hours and Location</a></li>
-   <li class="card-toggle">
-    <a href="#"><i class="fa fa-book" aria-hidden="true"></i>
-   Get a Library Card!</a></li>
-   <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i>
-    Support and Volunteer</a></li>
-    <li><a href=""><i class="fa fa-question-circle" aria-hidden="true"></i>
-     Get Help</a></li>
-  <li class="button sidebar dropdown-toggle" id="login"><a href="#">Login/My Account</a>
-
-    </li>
-  </ul>-->
-
-  <div id="loginModal" class="main" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="false">
-          <div class="modal-header">
-            <h3>Create an Account</h3>
-            <ul>
-              <li id="register_button"><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-memberentry.pl">Register</a></li>
-            </ul>
-            <h3>Borrowing</h3>
-            <ul id="borrowing">
-              <li><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-user.pl">Renew Checked Out Items</a></li>
-              <li><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-shelves.pl">Your Lists</a></li>
-              <li><a href="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-suggestions.pl">Your Purchase Suggestions</a></li>
-            </ul>
-          </div>
-
-
-      </div>
-
-  <div id="hoursModal" class="main" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="false">
-  <h3>Hours Today</h3>
-  <ul>
-    <li><em>8:00am-6:00pm</em></li>
-    <li><a href="#">View Hours this Week</a></li>
-  </ul>
-  <h3>Visit the Library</h3>
-  <ul id="library_address">
-  <li>Little Elm Public Library</li>
-  <li>100 W. Eldorado Pkwy.</li>
-  <li>Little Elm, TX 75068</li>
-  <li>Ph: (214) 975-0430</li>
-  <li>Fax: (214) 618-3582</li>
-  </ul>
-  </section>
-
-
-              <section id="research_area">
-                <section id="logo">
-                <img src="images/lel_logo.png" />
-              </section>
-
-                <section class="research">
-                <h3><em>Search the Catalog</em></h3>
-                <form action="http://littleelm.bywatersolutions.com/cgi-bin/koha/opac-search.pl" id="searchform" method="get" name="searchform"><input id="transl1" name="q" type="text">
-                  <select id="masthead_search" name="idx">
-                    <option value="kw">Keyword</option>
-                    <option value="ti">Title</option>
-                    <option value="au">Author</option>
-                    <option value="su">Subject</option>
-                    <option value="nb">ISBN</option>
-                    <option value="se">Series</option>
-                    <option value="callnum">Call Number</option>
-                  </select>
-
-  <a href="#" class="button">Search</a>
-
-  </form>
-
-  <ul class="search_options">
-  <li><a href="">Advanced Search</a></li>
-  <li><a href="#">Suggest a Purchase</a></li>
-  </ul>
-
-  <ul class="search_options">
-  <li class="green_button"><a href="#">Login/My Account</a></li>
-
-  </ul>
-
-  </section>
-
-  </section>
-
-
-  <section class="main_nav">
-
-  <div class="container">
-
-        <div class="row">
-  <nav>
-    <ul>
-      <li><a href="https://lepl.ticketleap.com">Events Calendar</a></li>
-      <li><a href="children.html">Kids & Parents</a></li>
-        <li class="active"><a href="teen.html">Teens</a></li>
-      <li><a href="adult.html">Adults</a></li>
-      <li><a href="reference.html">Reference Services</a></li>
-      <li><a href="databases.html">Digital Library</a></li>
-      <li><a href="seedlibrary.html">Seed Library</a></li>
-      <li><a href="about.html">About Us</a></li>
-    </ul>
-  </nav>
-
-  </div>
-
-  </div>
-
-  </section>
-
-  </header>
+<div ng-include='"templates/header.html"'></div>
 
 
 <section class="children_opening">
@@ -289,50 +170,7 @@
 
 </section>
 
-<footer>
-
-  <div class="container">
-
-        <div class="row">
-
-
-              <div class="twelve columns">
-
-
-<section id="footer_content">
-
-<section id="littleelm_footer">
-
-<img src="images/littleelm.png" />
-
-<ul id="little_elm_social">
-<li><a href="http://www.facebook.com/littleelmlibrary"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-<li><a href="https://twitter.com/littleelmtx"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-</ul>
-
-</section>
-
-<section>
-
-<ul>
-  <li>Little Elm Public Library</li>
-  <li>100 W. Eldorado Pkwy.</li>
-  <li>Little Elm, TX 75068</li>
-  <li>Ph: (214) 975-0430</li>
-  <li>Fax: (214) 618-3582</li>
-  <li><em>Need Help?</em> <a href="mailto:reference@littleelmlibrary.org">reference@littleelmlibrary.org</a></li>
-</ul>
-</section>
-
-</section>
-
-</div>
-
-</div>
-
-</div>
-
-</footer>
+<div ng-include='"templates/footer.html"'></div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
@@ -350,6 +188,12 @@
       $('.new-slider').unslider();
 		});
 	</script>
+
+  <!-- load angular and angular route via CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+  <script src="js/main.js"></script>
 
 </body>
 
