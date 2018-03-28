@@ -1,3 +1,6 @@
+#login {
+  padding: 10px; }
+
 #events img {
   width: 100%; }
 
@@ -44,7 +47,7 @@
     padding: 10px; }
 
 .friends_events p {
-  font-family: "eskorte-latin";
+  font-family: 'Roboto', sans-serif;
   font-size: 18px; }
 
 a.tl-button {
@@ -248,8 +251,7 @@ footer {
   background-image: -o-linear-gradient(top, #10284b, #224a83);
   background-image: linear-gradient(top, #10284b, #224a83);
   background-repeat: repeat-y;
-  border: 0 none;
-  margin-top: 233px; }
+  border: 0 none; }
 
 #social_media a {
   font-size: 3.7em; }
@@ -672,16 +674,20 @@ header {
     padding: 20px;
     opacity: .8; }
 
+.events_home {
+  display: flex;
+  width: 69%; }
+
 #events {
   padding: 20px;
-  background-color: #f8f8f9 !important;
-  float: left; }
+  background-color: #f8f8f9 !important; }
   #events section {
     background-color: #ffffff;
     padding: 10px;
     border: 1px solid #ccc;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    min-height: 315px; }
+    min-height: 315px;
+    margin-left: 10px; }
   #events h2 {
     font-size: 2.1em; }
 
@@ -891,7 +897,7 @@ header {
   padding: 10px; }
   .event_text p {
     color: #ffffff;
-    font-family: "eskorte-latin";
+    font-family: 'Roboto', sans-serif !important;
     font-size: 18px; }
   .event_text p {
     color: #022b57;
